@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Recommendations - Page 3</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6e4;
+      margin: 0;
+      padding: 20px;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #6a5acd;
+    }
+
+    #searchBar {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #E0B0FF;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: black;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: left; margin-bottom: 20px;">
+    <a href="page2.html" style="font-size: 1em; color: #6a5acd; text-decoration: none;">← Back to Page 2</a>
+  </div>
+
+  <h1>📚 Book Recommendations (Page 3)</h1>
+  <input type="text" id="searchBar" placeholder="Search by title, author, or genre...">
+
+  <div class="grid" id="bookGrid">
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/23/a9/9d/23a99d94c17295945db1e3e99038db17.jpg" alt="">
+      <h3>I Want to Die But I Want to Eat Tteokbokki</h3>
+      <p><strong>Author:</strong> Baek Sehee</p>
+      <p><strong>Genre:</strong> Memoir / Mental Health</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/90/31/bb/9031bb44d522d9e8dfd938f6eb2e369d.jpg" alt="">
+      <h3>The Love Hypothesis</h3>
+      <p><strong>Author:</strong> Ali Hazelwood</p>
+      <p><strong>Genre:</strong> Romance / Contemporary</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/f3/8e/bb/f38ebb2eaee240fbcae7620f4cf5f2ac.jpg" alt="">
+      <h3>The Wedding People</h3>
+      <p><strong>Author:</strong> Alison Espach</p>
+      <p><strong>Genre:</strong> Literary Fiction / Comedy</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/54/0f/ad/540fadf5a63d11579921a29d7615a0ae.jpg" alt="">
+      <h3>Reckless</h3>
+      <p><strong>Author:</strong> Elsie Silver</p>
+      <p><strong>Genre:</strong> Romance / Cowboy</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/3e/2a/0e/3e2a0eb18952271ab0dd7d8a54eb3cba.jpg" alt="">
+      <h3>Fearless</h3>
+      <p><strong>Author:</strong> Elsie Silver</p>
+      <p><strong>Genre:</strong> Romance / Western</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/5d/66/75/5d667546dd1400ad43916259c031a356.jpg" alt="">
+      <h3>Powerless</h3>
+      <p><strong>Author:</strong> Elsie Silver</p>
+      <p><strong>Genre:</strong> Romance / Contemporary</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/3e/15/54/3e1554a9368dd86b4c4374121d31d71d.jpg" alt="">
+      <h3>The Da Vinci Code</h3>
+      <p><strong>Author:</strong> Dan Brown</p>
+      <p><strong>Genre:</strong> Thriller / Mystery</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/a9/b5/20/a9b5203138836c4fcc64cf90b108e36c.jpg" alt="">
+      <h3>Ponniyin Selvan</h3>
+      <p><strong>Author:</strong> Kalki Krishnamurthy</p>
+      <p><strong>Genre:</strong> Historical Fiction (Tamil)</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/2b/e7/37/2be737069712479f38871d2ea4a8dee8.jpg" alt="">
+      <h3>The Family Upstairs</h3>
+      <p><strong>Author:</strong> Lisa Jewell</p>
+      <p><strong>Genre:</strong> Mystery / Psychological Thriller</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/ea/87/e5/ea87e5dd6bd36ccea9299fc024f08c09.jpg" alt="">
+      <h3>The Midnight Library</h3>
+      <p><strong>Author:</strong> Matt Haig</p>
+      <p><strong>Genre:</strong> Fiction / Philosophical</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/35/91/08/3591080480c4cbdb1d17dcbbd681bf4d.jpg" alt="">
+      <h3>Checkmate</h3>
+      <p><strong>Author:</strong> Ali Hazelwood</p>
+      <p><strong>Genre:</strong> Romance / STEM</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/79/d1/9a/79d19a1786ad8883c4d911fe31f25517.jpg" alt="">
+      <h3>The Trial</h3>
+      <p><strong>Author:</strong> Franz Kafka</p>
+      <p><strong>Genre:</strong> Classic / Existential Fiction</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/5b/e5/c0/5be5c074ca936e8e610ad17011dfd6cb.jpg" alt="">
+      <h3>The Secret</h3>
+      <p><strong>Author:</strong> Rhonda Byrne</p>
+      <p><strong>Genre:</strong> Self-Help / Law of Attraction</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/50/20/2b/50202bdc052d718bc6bd7bcfeceb791d.jpg" alt="">
+      <h3>The Silent Patient</h3>
+      <p><strong>Author:</strong> Alex Michaelides</p>
+      <p><strong>Genre:</strong> Psychological Thriller</p>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/1200x/ad/5c/55/ad5c559c3e996a8229d10af07f2f5650.jpg" alt="">
+        <h3>Norwegian Wood</h3>
+        <p><strong>Author:</strong> Haruki Murakami</p>
+        <p><strong>Genre:</strong> Literary Fiction / Coming-of-age</p>
+      </div>
+      
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/91/d5/c9/91d5c948a89c81d9cba94fd1cc8d3c54.jpg" alt="">
+        <h3>The Book Thief</h3>
+        <p><strong>Author:</strong> Markus Zusak</p>
+        <p><strong>Genre:</strong> Historical Fiction / YA</p>
+      </div>
+      
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/ef/07/5f/ef075f9b190bf29567424e009a6ec031.jpg" alt="">
+        <h3>Tuesdays with Morrie</h3>
+        <p><strong>Author:</strong> Mitch Albom</p>
+        <p><strong>Genre:</strong> Memoir / Inspirational</p>
+      </div>
+      
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/f8/90/86/f89086f41dcedad761969b8956e55bb5.jpg" alt="">
+        <h3>Looking for Alaska</h3>
+        <p><strong>Author:</strong> John Green</p>
+        <p><strong>Genre:</strong> YA / Coming-of-age</p>
+      </div>
+      
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/76/a3/b0/76a3b07154cb6c9af293c21ee466b52a.jpg" alt="">
+        <h3>Little Women</h3>
+        <p><strong>Author:</strong> Louisa May Alcott</p>
+        <p><strong>Genre:</strong> Classic / Family Fiction</p>
+      </div>
+      
+  </div>
+
+
+  <script>
+    const searchBar = document.getElementById('searchBar');
+    const cards = document.querySelectorAll('.card');
+
+    searchBar.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

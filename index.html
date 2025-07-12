@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Recommendations</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6e4;
+      margin: 0;
+      padding: 20px;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #6a5acd;
+    }
+
+    #searchBar {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #E0B0FF;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: black;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Book Recommendations</h1>
+  <input type="text" id="searchBar" placeholder="Search by title, author, or genre...">
+
+  <div class="grid" id="bookGrid">
+    <!-- Book 1 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/54/50/8b/54508b92f052a417dabf8bdcf2dabbb2.jpg" alt="The Fault in Our Stars Cover">
+      <h3>The Fault in Our Stars</h3>
+      <p><strong>Author:</strong> John Green</p>
+      <p><strong>Genre:</strong> Young Adult / Romance</p>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/9f/ec/94/9fec94a3520970d6e1790dee25ef7b3c.jpg" alt="Better Than the Movies Cover">
+      <h3>Better Than the Movies</h3>
+      <p><strong>Author:</strong> Lynn Painter</p>
+      <p><strong>Genre:</strong> Contemporary Romance / Teen</p>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/0f/a0/7b/0fa07b91c4c13e885bd29e12dbcc6608.jpg" alt="The Forty Rules of Love Cover">
+      <h3>The Forty Rules of Love</h3>
+      <p><strong>Author:</strong> Elif Shafak</p>
+      <p><strong>Genre:</strong> Historical Fiction / Spiritual</p>
+    </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/ca/9c/89/ca9c89e50a6e0885c7d835d5dc949a38.jpg" alt="">
+          <h3>What Are You Looking For Is in the Library</h3>
+          <p><strong>Author:</strong> Michiko Aoyama</p>
+          <p><strong>Genre:</strong> Literary Fiction</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/b9/b5/c1/b9b5c16b713838848692778b3df853af.jpg" alt="">
+          <h3>The Housemaid Series</h3>
+          <p><strong>Author:</strong> Freida McFadden</p>
+          <p><strong>Genre:</strong> Psychological Thriller</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/b1/40/03/b140032e77ee3cbc20dbd03ac567b0ac.jpg" alt="">
+          <h3>Yellowface</h3>
+          <p><strong>Author:</strong> R.F. Kuang</p>
+          <p><strong>Genre:</strong> Satirical Fiction</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/1c/d1/5c/1cd15cd97aa589d2dfbcd98fb1708155.jpg" alt="">
+          <h3>Tomorrow, and Tomorrow, and Tomorrow</h3>
+          <p><strong>Author:</strong> Gabrielle Zevin</p>
+          <p><strong>Genre:</strong> Contemporary Fiction</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/8c/02/76/8c0276709d982bfa8e5e21e2cbbed172.jpg" alt="">
+          <h3>First Time Caller</h3>
+          <p><strong>Author:</strong> Mary H.K. Choi</p>
+          <p><strong>Genre:</strong> Young Adult</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/1200x/4d/aa/d3/4daad3c809b2fa8c5ae882f874afe81b.jpg" alt="">
+          <h3>Orbital</h3>
+          <p><strong>Author:</strong> Samantha Harvey</p>
+          <p><strong>Genre:</strong> Sci-Fi / Literary</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/26/f4/fd/26f4fdc55c5801815d58ac96fd440af5.jpg" alt="">
+          <h3>A Thousand Splendid Suns</h3>
+          <p><strong>Author:</strong> Khaled Hosseini</p>
+          <p><strong>Genre:</strong> Historical Fiction</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/6f/d4/92/6fd4920c82cfcdcfec264a826081bd53.jpg" alt="">
+          <h3>The Seven Husbands of Evelyn Hugo</h3>
+          <p><strong>Author:</strong> Taylor Jenkins Reid</p>
+          <p><strong>Genre:</strong> Historical Romance</p>
+        </div>
+    
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/3b/fd/ba/3bfdba1787af7126d4a83282b2fd446f.jpg" alt="">
+          <h3>Icebreaker</h3>
+          <p><strong>Author:</strong> Hannah Grace</p>
+          <p><strong>Genre:</strong> Sports Romance</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/87/49/c8/8749c865328926a84f1f5f1885087880.jpg" alt="">
+            <h3>The American Roommate Experiment</h3>
+            <p><strong>Author:</strong> Elena Armas</p>
+            <p><strong>Genre:</strong> Romance / Contemporary</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://i.pinimg.com/1200x/49/d8/4b/49d84b23e118891d57e77543f25eecb7.jpg" alt="">
+            <h3>Love, Theoretically</h3>
+            <p><strong>Author:</strong> Ali Hazelwood</p>
+            <p><strong>Genre:</strong> Romance / STEM</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/1a/93/eb/1a93ebfac1d89aba46dd9fa4af2cd73d.jpg" alt="">
+            <h3>The Song of Achilles</h3>
+            <p><strong>Author:</strong> Madeline Miller</p>
+            <p><strong>Genre:</strong> Historical Fiction / Mythology</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/ae/45/bc/ae45bc7512c5f3baaa169abb2157a2c6.jpg" alt="">
+            <h3>Before I Go to Sleep</h3>
+            <p><strong>Author:</strong> S.J. Watson</p>
+            <p><strong>Genre:</strong> Psychological Thriller</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/b6/4d/36/b64d3653c695e1f716ead22203b09d23.jpg" alt="">
+            <h3>To the Lighthouse</h3>
+            <p><strong>Author:</strong> Virginia Woolf</p>
+            <p><strong>Genre:</strong> Classic / Modernist Fiction</p>
+          </div>
+          
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/47/34/33/47343325003345ce6aecf555a8dcb5d8.jpg" alt="">
+            <h3>Normal People</h3>
+            <p><strong>Author:</strong> Sally Rooney</p>
+            <p><strong>Genre:</strong> Literary Fiction / Romance</p>
+          </div>
+       
+        <a href="page2.html" style="font-size: 1.1em; color: #6a5acd; text-decoration: none;">Next Page →</a>
+      </div>
+    
+      <script>
+        const searchBar = document.getElementById('searchBar');
+        const cards = document.querySelectorAll('.card');
+    
+        searchBar.addEventListener('input', function () {
+          const query = this.value.toLowerCase();
+    
+          cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+            card.style.display = text.includes(query) ? 'block' : 'none';
+          });
+        });
+      </script>
+    </body>
+    </html>
+
+  
